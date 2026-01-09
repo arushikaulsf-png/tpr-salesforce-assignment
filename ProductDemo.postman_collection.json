@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "4e76f6b0-ca5b-4885-9ed5-e235019f4874",
+		"name": "ProductDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34500523"
+	},
+	"item": [
+		{
+			"name": "getProductDetails",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 00Dfj00000GDuuP!AQEAQFfcURc1_srhAkxrNbVi41fVH5EbeNjRP6gRUTEzULa1nNe2LnhXDs6qLX26ptJyVDgkkVJ1JYVJOs94bdIIyo2O9PsY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://orgfarm-66013d9e90-dev-ed.develop.my.salesforce.com/services/apexrest/n26/ProductFee/0001",
+					"protocol": "https",
+					"host": [
+						"orgfarm-66013d9e90-dev-ed",
+						"develop",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"n26",
+						"ProductFee",
+						"0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Oauth Call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "3MVG9HtWXcDGV.nHC9zyb9tF8ExG..KpTZsvELQGp9eZpPDJ8P6kwBsGzLk.brrHc3COr4pYQGI64K32vFYY3",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "53A20AFF6BF5A1596B2C73A4442CC5BAC2CCD27271C724BFE76FE75804FEC37D",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://orgfarm-66013d9e90-dev-ed.develop.my.salesforce.com/services/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"orgfarm-66013d9e90-dev-ed",
+						"develop",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
