@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="Product Pricing Details">
+    <div class="slds-p-around_small">
+      <template if:true={hasData}>
+        <lightning-datatable
+          key-field="Id"
+          data={pricingList}
+          columns={columns}
+          hide-checkbox-column>
+        </lightning-datatable>
+      </template>
+      <template if:false={hasData}>
+        <p class="slds-text-body_small slds-text-color_weak">
+          No pricing information available for this customer's product and country.
+        </p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
