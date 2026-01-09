@@ -18,7 +18,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer 00Dfj00000GDuuP!AQEAQFfcURc1_srhAkxrNbVi41fVH5EbeNjRP6gRUTEzULa1nNe2LnhXDs6qLX26ptJyVDgkkVJ1JYVJOs94bdIIyo2O9PsY",
+						"value": "Bearer {{TOKEN}}",
 						"type": "text"
 					},
 					{
@@ -58,7 +58,7 @@
 					"urlencoded": [
 						{
 							"key": "client_id",
-							"value": "3MVG9HtWXcDGV.nHC9zyb9tF8ExG..KpTZsvELQGp9eZpPDJ8P6kwBsGzLk.brrHc3COr4pYQGI64K32vFYY3",
+							"value": "{{CONSUMER KEY}}",
 							"type": "text"
 						},
 						{
@@ -68,7 +68,7 @@
 						},
 						{
 							"key": "client_secret",
-							"value": "53A20AFF6BF5A1596B2C73A4442CC5BAC2CCD27271C724BFE76FE75804FEC37D",
+							"value": "{{CONSUMER SECRET}}",
 							"type": "text"
 						}
 					]
