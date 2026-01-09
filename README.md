@@ -58,6 +58,6 @@ c; Apex execution.
 5. Test API: GET `/n26/ProductFee/{contact-uuid}` (use Postman with Connected App auth).
 ## Architecture Decisions
 - OOP: Service layer separates logic; wrappers for formatting.
--Used Custom Object Product_Fee__c for storing the Product data, we could also use Custom Metadadat
+-Used Custom Object Product_Fee__c for storing the Product data, we could also use Custom Metadadata
 
 
