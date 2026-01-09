@@ -56,6 +56,17 @@ c; Apex execution.
 4. Populate Product_Fee__c
  with sample data from case study tables
 5. Test API: GET `/n26/ProductFee/{contact-uuid}` (use Postman with Connected App auth).
+6. POSTMAN collection file added ProductDemo.postman_collection
+POSTMAN output:
+[
+    {
+        "product": "Standard",
+        "monthlyFee": 0.00,
+        "country": "DE",
+        "cardReplacement": 6.00,
+        "atmFee": 0.017
+    }
+]
 ## Architecture Decisions
 - OOP: Service layer separates logic; wrappers for formatting.
 -Used Custom Object Product_Fee__c for storing the Product data, we could also use Custom Metadadata
