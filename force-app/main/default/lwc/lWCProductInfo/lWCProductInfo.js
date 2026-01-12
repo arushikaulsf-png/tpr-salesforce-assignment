@@ -1,7 +1,7 @@
 import { LightningElement, api, wire, track } from 'lwc';
 import getPricingForCase from '@salesforce/apex/PricingInfoClass.getPricingForCase';
 
-export default class N26ProductPricing extends LightningElement {
+export default class lWCProductInfo extends LightningElement {
     @api recordId;
     @track pricingList = [];
     
